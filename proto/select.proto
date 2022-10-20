@@ -130,6 +130,8 @@ message DAGRequest {
 
         // Force using the encode type specified by encode_type, currently only used in TiFlash
 	optional bool force_encode_type = 18;
+
+	optional bytes velox_plan = 19;
 }
 
 enum EncodeType {
