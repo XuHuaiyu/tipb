@@ -103,6 +103,7 @@ message TableScan {
 	optional bool keep_order = 8;
 	optional bool is_fast_scan = 9; // fast_scan is a feature only provided by TiFlash (but not TiKV).
 	repeated Expr pushed_down_filter_conditions = 10; // conditions that are pushed down to storage layer, only used by TiFlash.
+	repeated bytes hdfs_uri = 11; // hdfs uri that tiflash needs to read from
 }
 
 message PartitionTableScan {
