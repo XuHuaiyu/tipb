@@ -41,10 +41,12 @@ It has these top-level messages:
 	ChecksumResponse
 	Executor
 	ExchangeSender
+	EncodedBytesSlice
 	ExchangeReceiver
 	TableScan
 	PartitionTableScan
 	Join
+	RuntimeFilter
 	IndexScan
 	Selection
 	Projection
@@ -53,6 +55,7 @@ It has these top-level messages:
 	Limit
 	Kill
 	ExecutorExecutionSummary
+	TiFlashExecutionInfo
 	TiFlashScanContext
 	Sort
 	WindowFrameBound
@@ -61,6 +64,8 @@ It has these top-level messages:
 	GroupingExpr
 	GroupingSet
 	Expand
+	ExprSlice
+	Expand2
 	ExplainData
 	ExplainOperator
 	AccessObject
@@ -74,6 +79,8 @@ It has these top-level messages:
 	ByItem
 	InUnionMetadata
 	CompareInMetadata
+	GroupingMark
+	GroupingFunctionMetadata
 	ResourceGroupTag
 	TableInfo
 	ColumnInfo
